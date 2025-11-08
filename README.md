@@ -206,3 +206,29 @@ a_students = Student.objects.get_students_by_name_starting_with('A')
 all_students = Student.objects.all()
 inactive_students = Student.objects.filter(is_active=False)
 ```
+
+### Running the Demo
+
+A management command is provided to demonstrate all concepts:
+
+```bash
+python manage.py demo_orm
+```
+
+This command will:
+- Create sample student data
+- Demonstrate custom manager methods
+- Show various QuerySet operations (filtering, ordering, limiting, aggregation)
+
+### Running Tests
+
+Run the unit tests to verify the ORM functionality:
+
+```bash
+python manage.py test
+```
+
+The tests cover:
+- Model creation and basic operations
+- Custom manager methods
+- QuerySet filtering, ordering, and counting operations
